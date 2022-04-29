@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1">
+		<title>Encriptador</title>
+        <link rel="icon" href="AluraLogo.svg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/IndexStile.css">
+	</head>
+
+	<body>
+		<header>
+            <img id="icono-alura" src="AluraLogo.svg"></img>
+        </header>	
+		
+		<main>
+            
+
+       
+            <div class="rectangulo-1">
+               <div>
+                   <form action="">  
+                       
+                       <label>
+                            <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+                        </label>  
+                        
+                        <label class="contenedorAdvertencia">
+
+                            <img class="iconoadvertencia" src="Vector.svg" ></img>
+                            <p class="textoAdvertencia">Solo letras minúsculas y sin acentos</p>                      
+                            
+                        </label>
+                        <label class="contenedorBotones">
+                            
+                            <input class="btn" type="button" value="Encriptar" id="btn-encriptar" onclick="mostrarElementos()">
+                            <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar" onclick="mostrarElementos()">             
+                            
+                        </label>
+                    </form>
+                </div> 
+            </div>                
+
+            <div class="rectangulo-2">
+                <div >
+                    <form action="">
+                        <div id="textoMasImagen">
+
+                            <img class="imagenRectangulo" src="Muñeco.svg" ></img>
+                            <h2>Ningún mensaje fue encontrado</h2>   
+                            <h3>Ingresa el texto que desees encriptar o desencriptar.</h2>   
+                            
+                        </div>                       
+                        <div id="resultado">
+                            <textarea class="text-input-salida"  rows="10" cols="50" type="text" id="msg" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                                
+                            <button  class="btn" type="button"  id="btn-copy" onclick="copiar()">copiar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+		</main>
+        
+        
+		<script src="js/Encriptador.js"></script>	
+        <script src="js/CopiarBoton.js"></script>	
+        
+	</body>
+    <footer>
+        <div>
+            <span id="textos">Desarollado por Jose Pedro Dominguez 2022</span>
+        </div>
+    </footer>
+
+</html>
